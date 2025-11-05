@@ -1,12 +1,11 @@
-import Link from "next/link";
-export default function DashboardHome() {
+export default function Dashboard() {
   return (
-    <main className="p-6 space-y-4">
-      <h1 className="text-2xl font-semibold">SafetySync.ai — Dashboard</h1>
-      <ul className="space-y-2">
-        <li><Link className="underline" href="/app/certificates">Issue Certificate (coming next)</Link></li>
-        <li><Link className="underline" href="/app/wallet-cards">Issue Wallet Card (coming next)</Link></li>
-        <li><Link className="underline" href="/u/demoUserToken">View employee certs (demo)</Link></li>
+    <main style={{padding:24}}>
+      <h1>SafetySync.ai — Dashboard</h1>
+      <ul>
+        <li><a href="#">Issue Certificate (coming next)</a></li>
+        <li><a href="#">Issue Wallet Card (coming next)</a></li>
+        <li><a href="/u/demoUserToken">View employee certs (demo)</a></li>
       </ul>
     </main>
   );
